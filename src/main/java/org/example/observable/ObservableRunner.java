@@ -1,6 +1,6 @@
 package org.example.observable;
 
-import org.example.interfaces.IDesignPattern;
+import org.example.IDesignPattern;
 import org.example.observable.implementation.EmailObserver;
 import org.example.observable.implementation.IphoneObservable;
 import org.example.observable.implementation.MobileObserver;

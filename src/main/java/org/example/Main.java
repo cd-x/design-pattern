@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.interfaces.IDesignPattern;
 import org.example.observable.ObservableRunner;
 
 public class Main {
