@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f11d599-523e-4976-97b6-374986469544" name="Changes" comment="singleton:: enum way">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/DebugLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/ErrorLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/Execute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/InfoLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/LoggingLevel.java" afterDir="false" />
+    <list default="true" id="8f11d599-523e-4976-97b6-374986469544" name="Changes" comment="chani responsibility design pattern">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/snakeNladder/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/snakeNladder/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/snakeNladder/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/snakeNladder/Ladder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/snakeNladder/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/snakeNladder/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/snakeNladder/Snake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734960798182</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="chani responsibility design pattern">
+      <option name="closed" value="true" />
+      <created>1734962649396</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734962649396</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,6 +204,7 @@
     <MESSAGE value="singleton:: classic way" />
     <MESSAGE value="singleton:: eager way" />
     <MESSAGE value="singleton:: enum way" />
-    <option name="LAST_COMMIT_MESSAGE" value="singleton:: enum way" />
+    <MESSAGE value="chani responsibility design pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="chani responsibility design pattern" />
   </component>
 </project>
