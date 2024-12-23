@@ -1,14 +1,9 @@
 package org.example.singleton;
 
-import org.example.usecase.carrental.models.Invoice;
-
-public class MyClass {
-    Integer count =5;
-    private static MyClass instance = new MyClass();
+public enum MyClass {
+    UNIQUE_INSTANCE;
+    private Integer count = 0;
     private MyClass(){}
-    public static MyClass getInstance(){
-        return instance;
-    }
     public Integer getCount(){
         return count;
     }
