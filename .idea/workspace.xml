@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f11d599-523e-4976-97b6-374986469544" name="Changes" comment="refactor">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/singleton/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/singleton/MyClass.java" afterDir="false" />
+    <list default="true" id="8f11d599-523e-4976-97b6-374986469544" name="Changes" comment="singleton:: classic way">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/singleton/MyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/singleton/MyClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,12 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1734161057665</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="singleton:: classic way">
+      <option name="closed" value="true" />
+      <created>1734955072516</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734955072516</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="observable pattern" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="singleton:: classic way" />
+    <option name="LAST_COMMIT_MESSAGE" value="singleton:: classic way" />
   </component>
 </project>

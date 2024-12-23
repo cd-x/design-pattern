@@ -4,12 +4,9 @@ import org.example.usecase.carrental.models.Invoice;
 
 public class MyClass {
     Integer count =5;
-    private static MyClass instance;
+    private static MyClass instance = new MyClass();
     private MyClass(){}
     public static MyClass getInstance(){
-        if(instance == null){
-            instance = new MyClass();
-        }
         return instance;
     }
     public Integer getCount(){
