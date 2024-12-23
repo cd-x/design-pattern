@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f11d599-523e-4976-97b6-374986469544" name="Changes" comment="singleton:: eager way">
+    <list default="true" id="8f11d599-523e-4976-97b6-374986469544" name="Changes" comment="singleton:: enum way">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/DebugLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/ErrorLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/Execute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/InfoLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/chain_responsibility/LoggingLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/singleton/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/singleton/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/singleton/MyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/singleton/MyClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,14 +21,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
@@ -39,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Execute.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.org.example.singleton.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -54,7 +62,20 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.org.example.singleton.Main">
+  <component name="RunManager" selected="Application.Execute">
+    <configuration name="Execute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.chain_responsibility.Execute" />
+      <module name="design-patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.chain_responsibility.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.decorator.Main" />
       <module name="design-patterns" />
@@ -90,11 +111,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.o" />
+      <item itemvalue="Application.Execute" />
       <item itemvalue="Application.org.example.singleton.Main" />
       <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Execute" />
         <item itemvalue="Application.org.example.singleton.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -154,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734955963798</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="singleton:: enum way">
+      <option name="closed" value="true" />
+      <created>1734960798182</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734960798182</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,6 +193,7 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="singleton:: classic way" />
     <MESSAGE value="singleton:: eager way" />
-    <option name="LAST_COMMIT_MESSAGE" value="singleton:: eager way" />
+    <MESSAGE value="singleton:: enum way" />
+    <option name="LAST_COMMIT_MESSAGE" value="singleton:: enum way" />
   </component>
 </project>
