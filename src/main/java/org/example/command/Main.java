@@ -16,5 +16,8 @@ public class Main {
         remote.pressButton(0,0);
         remote.pressButton(1,1);
         remote.undoAll();
+        String s = "10101";
+        int x = Character.getNumericValue(s.charAt(1));
+
     }
 }
