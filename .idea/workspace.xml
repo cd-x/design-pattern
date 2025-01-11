@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f11d599-523e-4976-97b6-374986469544" name="Changes" comment="command pattern">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/template/CaffieneBeverage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/template/CoffeeBeverage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/template/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/template/TeaBeverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/client/GumballMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/client/IGumballMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/remote/GumballMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/remote/IGumballMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/remote/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/remote/StateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/splitwise/BalanceSheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/splitwise/Expense.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/splitwise/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/splitwise/Splitwise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/splitwise/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +69,11 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.proxy.client" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.org.example.template.Main">
     <configuration name="Execute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.chain_responsibility.Execute" />
