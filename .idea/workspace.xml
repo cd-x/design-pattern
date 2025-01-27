@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f11d599-523e-4976-97b6-374986469544" name="Changes" comment="command pattern">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/client/GumballMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/client/IGumballMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/remote/GumballMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/remote/IGumballMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/remote/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proxy/remote/StateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/splitwise/BalanceSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/splitwise/Expense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/splitwise/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/splitwise/Splitwise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/splitwise/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/GumballMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/IGumballMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/HasQuarter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/IState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/NoQuarter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/Refill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/Sold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/SoldOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/patterns/StatePatternTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/usecases/SnakeAndLadderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +35,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib/src.zip!/java.base/java/util/random/RandomGenerator.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -56,6 +60,11 @@
     "Application.org.example.command.Main.executor": "Debug",
     "Application.org.example.singleton.Main.executor": "Run",
     "Application.org.example.template.Main.executor": "Run",
+    "JUnit.SampleTest.sampleTest.executor": "Run",
+    "JUnit.StatePatternTest.test_gumball_when_filled.executor": "Run",
+    "Maven.design-patterns [clean,install,test].executor": "Run",
+    "Maven.design-patterns [clean,install].executor": "Run",
+    "Maven.design-patterns [test].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -64,36 +73,27 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/rajrishivishwakarma/dev/design-pattern",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/test/java/org/example" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.proxy.client" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.example.template.Main">
+  <component name="RunManager" selected="JUnit.StatePatternTest.test_gumball_when_filled">
     <configuration name="Execute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.chain_responsibility.Execute" />
       <module name="design-patterns" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.chain_responsibility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.decorator.Main" />
-      <module name="design-patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.decorator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,19 +121,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.singleton.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.singleton.Main" />
-      <module name="design-patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.singleton.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="org.example.template.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.template.Main" />
       <module name="design-patterns" />
@@ -147,21 +134,82 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SampleTest.sampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="design-patterns" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SampleTest" />
+      <option name="METHOD_NAME" value="sampleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatePatternTest.test_gumball_when_filled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="design-patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="patterns" />
+      <option name="MAIN_CLASS_NAME" value="patterns.StatePatternTest" />
+      <option name="METHOD_NAME" value="test_gumball_when_filled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="design-patterns [clean,install,test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="test" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map>
+                <entry key="ci" value="true" />
+              </map>
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.o" />
       <item itemvalue="Application.org.example.template.Main" />
       <item itemvalue="Application.Execute" />
       <item itemvalue="Application.org.example.command.Main" />
-      <item itemvalue="Application.org.example.singleton.Main" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.StatePatternTest.test_gumball_when_filled" />
+      <item itemvalue="JUnit.SampleTest.sampleTest" />
+      <item itemvalue="Maven.design-patterns [clean,install,test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StatePatternTest.test_gumball_when_filled" />
+        <item itemvalue="JUnit.SampleTest.sampleTest" />
         <item itemvalue="Application.org.example.template.Main" />
         <item itemvalue="Application.org.example.command.Main" />
         <item itemvalue="Application.Execute" />
-        <item itemvalue="Application.org.example.singleton.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
