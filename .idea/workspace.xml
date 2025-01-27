@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f11d599-523e-4976-97b6-374986469544" name="Changes" comment="command pattern">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/GumballMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/IGumballMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/HasQuarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/IState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/NoQuarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/Refill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/Sold.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/states/SoldOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/patterns/StatePatternTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/usecases/SnakeAndLadderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/patterns/StatePatternTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/patterns/StatePatternTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +51,7 @@
     "Application.org.example.template.Main.executor": "Run",
     "JUnit.SampleTest.sampleTest.executor": "Run",
     "JUnit.StatePatternTest.test_gumball_when_filled.executor": "Run",
+    "JUnit.StatePatternTest.test_refill_when_serving_gumball.executor": "Run",
     "Maven.design-patterns [clean,install,test].executor": "Run",
     "Maven.design-patterns [clean,install].executor": "Run",
     "Maven.design-patterns [test].executor": "Run",
@@ -87,49 +77,10 @@
       <recent name="org.example.proxy.client" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StatePatternTest.test_gumball_when_filled">
-    <configuration name="Execute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.chain_responsibility.Execute" />
-      <module name="design-patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.chain_responsibility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StatePatternTest.test_eject_when_quarter_inserted">
     <configuration name="o" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="design-patterns" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.example.command.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.command.Main" />
-      <module name="design-patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.command.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.example.template.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.template.Main" />
-      <module name="design-patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.template.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,6 +90,22 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SampleTest" />
       <option name="METHOD_NAME" value="sampleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatePatternTest.test_eject_when_quarter_inserted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="design-patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="patterns" />
+      <option name="MAIN_CLASS_NAME" value="patterns.StatePatternTest" />
+      <option name="METHOD_NAME" value="test_eject_when_quarter_inserted" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,6 +122,38 @@
       <option name="PACKAGE_NAME" value="patterns" />
       <option name="MAIN_CLASS_NAME" value="patterns.StatePatternTest" />
       <option name="METHOD_NAME" value="test_gumball_when_filled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatePatternTest.test_refill_when_no_quarter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="design-patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="patterns" />
+      <option name="MAIN_CLASS_NAME" value="patterns.StatePatternTest" />
+      <option name="METHOD_NAME" value="test_refill_when_no_quarter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatePatternTest.test_refill_when_serving_gumball" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="design-patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="patterns" />
+      <option name="MAIN_CLASS_NAME" value="patterns.StatePatternTest" />
+      <option name="METHOD_NAME" value="test_refill_when_serving_gumball" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -196,20 +195,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.o" />
-      <item itemvalue="Application.org.example.template.Main" />
-      <item itemvalue="Application.Execute" />
-      <item itemvalue="Application.org.example.command.Main" />
+      <item itemvalue="JUnit.StatePatternTest.test_eject_when_quarter_inserted" />
       <item itemvalue="JUnit.StatePatternTest.test_gumball_when_filled" />
+      <item itemvalue="JUnit.StatePatternTest.test_refill_when_no_quarter" />
+      <item itemvalue="JUnit.StatePatternTest.test_refill_when_serving_gumball" />
       <item itemvalue="JUnit.SampleTest.sampleTest" />
       <item itemvalue="Maven.design-patterns [clean,install,test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StatePatternTest.test_eject_when_quarter_inserted" />
+        <item itemvalue="JUnit.StatePatternTest.test_refill_when_no_quarter" />
+        <item itemvalue="JUnit.StatePatternTest.test_refill_when_serving_gumball" />
         <item itemvalue="JUnit.StatePatternTest.test_gumball_when_filled" />
         <item itemvalue="JUnit.SampleTest.sampleTest" />
-        <item itemvalue="Application.org.example.template.Main" />
-        <item itemvalue="Application.org.example.command.Main" />
-        <item itemvalue="Application.Execute" />
       </list>
     </recent_temporary>
   </component>
