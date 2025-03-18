@@ -1,9 +1,6 @@
 package patterns;
 
-import org.example.iterator.BreakfastMenu;
-import org.example.iterator.DinnerMenu;
-import org.example.iterator.LunchMenu;
-import org.example.iterator.MenuItem;
+import org.example.iterator.*;
 import org.junit.jupiter.api.Test;
 
 public class IteratorPatternTest {
@@ -27,6 +24,7 @@ public class IteratorPatternTest {
         dinnerMenu.addMenuItem(new MenuItem("Shahi Paneer", "indian cuisine", 350.00, true));
         dinnerMenu.addMenuItem(new MenuItem("Lachcha Paratha", "indian", 30.00, true));
 
-
+        Waitress waitress = new Waitress(breakfastMenu, lunchMenu, dinnerMenu);
+        waitress.print();
     }
 }
