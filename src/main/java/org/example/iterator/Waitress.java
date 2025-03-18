@@ -1,12 +1,13 @@
 package org.example.iterator;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 public class Waitress {
-    private BreakfastMenu breakfastMenu;
-    private LunchMenu lunchMenu;
-    private DinnerMenu dinnerMenu;
+    private final BreakfastMenu breakfastMenu;
+    private final LunchMenu lunchMenu;
+    private final DinnerMenu dinnerMenu;
     public Waitress(BreakfastMenu breakfastMenu, LunchMenu lunchMenu, DinnerMenu dinnerMenu){
         this.breakfastMenu = breakfastMenu;
         this.lunchMenu = lunchMenu;
@@ -14,20 +15,16 @@ public class Waitress {
     }
 
     public void print(){
-        List<MenuItem> breakfastMenuItems = breakfastMenu.getMenu();
-        MenuItem[] lunchItems = lunchMenu.getMenu();
-        Map<String, MenuItem> menuItemMap = dinnerMenu.getMenu();
         System.out.println("-----Breakfast------");
-        for(MenuItem menuItem: breakfastMenuItems){
-            System.out.println(menuItem);
-        }
+        printMenu(breakfastMenu.iterator());
         System.out.println("-----Lunch------");
-        for(MenuItem menuItem: lunchItems){
-            System.out.println(menuItem);
-        }
+        printMenu(lunchMenu.iterator());
         System.out.println("-----Dinner------");
-        for(MenuItem menuItem: dinnerMenu.getMenu().values()){
-            System.out.println(menuItem);
+        printMenu(dinnerMenu.iterator());
+    }
+    private void printMenu(Iterator<MenuItem> menuItemIterator){
+        while (menuItemIterator.hasNext()){
+            System.out.println(menuItemIterator.next());
         }
     }
 }

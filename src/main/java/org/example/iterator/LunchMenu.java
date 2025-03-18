@@ -1,8 +1,11 @@
 package org.example.iterator;
 
+import org.example.iterator.aggregates.LunchMenuIterator;
+
+import java.util.Iterator;
 import java.util.List;
 
-public class LunchMenu {
+public class LunchMenu implements Iterable<MenuItem>{
     private static final Integer MAX_ITEMS = 6;
     private static Integer index = 0;
     private MenuItem[] menuItems;
@@ -15,7 +18,12 @@ public class LunchMenu {
         index++;
         return true;
     }
+    @Deprecated
     public MenuItem[] getMenu(){
         return menuItems;
+    }
+
+    public Iterator<MenuItem> iterator(){
+        return new LunchMenuIterator(menuItems);
     }
 }
